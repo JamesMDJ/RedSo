@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12CF1AED231E3342001516BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1AEC231E3342001516BE /* AppDelegate.swift */; };
+		12CF1AEF231E3342001516BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1AEE231E3342001516BE /* ViewController.swift */; };
+		12CF1AF2231E3342001516BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CF1AF0231E3342001516BE /* Main.storyboard */; };
+		12CF1AF5231E3342001516BE /* RedSo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1AF3231E3342001516BE /* RedSo.xcdatamodeld */; };
+		12CF1AF7231E3343001516BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CF1AF6231E3343001516BE /* Assets.xcassets */; };
+		12CF1AFA231E3343001516BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CF1AF8231E3343001516BE /* LaunchScreen.storyboard */; };
+		12CF1B05231E3343001516BE /* RedSoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1B04231E3343001516BE /* RedSoTests.swift */; };
+		12CF1B10231E3343001516BE /* RedSoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1B0F231E3343001516BE /* RedSoUITests.swift */; };
+		12CF1B21231E449E001516BE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1B20231E449E001516BE /* TableViewCell.swift */; };
+		12CF1B29231E4D72001516BE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1B28231E4D72001516BE /* Result.swift */; };
+		12CF1B2B231E4DBA001516BE /* CurrentResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1B2A231E4DBA001516BE /* CurrentResults.swift */; };
+		12CF1B30231E577B001516BE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1B2F231E577B001516BE /* APIManager.swift */; };
+		12CF1B34231E8CA6001516BE /* RedSoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CF1B33231E8CA6001516BE /* RedSoViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12CF1B01231E3343001516BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12CF1AE1231E3342001516BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12CF1AE8231E3342001516BE;
+			remoteInfo = RedSo;
+		};
+		12CF1B0C231E3343001516BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12CF1AE1231E3342001516BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12CF1AE8231E3342001516BE;
+			remoteInfo = RedSo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12CF1AE9231E3342001516BE /* RedSo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedSo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CF1AEC231E3342001516BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12CF1AEE231E3342001516BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12CF1AF1231E3342001516BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12CF1AF4231E3342001516BE /* RedSo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RedSo.xcdatamodel; sourceTree = "<group>"; };
+		12CF1AF6231E3343001516BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12CF1AF9231E3343001516BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12CF1AFB231E3343001516BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CF1B00231E3343001516BE /* RedSoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedSoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CF1B04231E3343001516BE /* RedSoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSoTests.swift; sourceTree = "<group>"; };
+		12CF1B06231E3343001516BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CF1B0B231E3343001516BE /* RedSoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedSoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CF1B0F231E3343001516BE /* RedSoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSoUITests.swift; sourceTree = "<group>"; };
+		12CF1B11231E3343001516BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CF1B20231E449E001516BE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		12CF1B28231E4D72001516BE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		12CF1B2A231E4DBA001516BE /* CurrentResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentResults.swift; sourceTree = "<group>"; };
+		12CF1B2F231E577B001516BE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		12CF1B33231E8CA6001516BE /* RedSoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSoViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12CF1AE6231E3342001516BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CF1AFD231E3343001516BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CF1B08231E3343001516BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12CF1AE0231E3342001516BE = {
+			isa = PBXGroup;
+			children = (
+				12CF1AEB231E3342001516BE /* RedSo */,
+				12CF1B03231E3343001516BE /* RedSoTests */,
+				12CF1B0E231E3343001516BE /* RedSoUITests */,
+				12CF1AEA231E3342001516BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12CF1AEA231E3342001516BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12CF1AE9231E3342001516BE /* RedSo.app */,
+				12CF1B00231E3343001516BE /* RedSoTests.xctest */,
+				12CF1B0B231E3343001516BE /* RedSoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12CF1AEB231E3342001516BE /* RedSo */ = {
+			isa = PBXGroup;
+			children = (
+				12CF1B36231E9FA5001516BE /* View */,
+				12CF1B2C231E56AA001516BE /* API */,
+				12CF1B1F231E353B001516BE /* ViewModel */,
+				12CF1B1E231E3533001516BE /* Controller */,
+				12CF1B1D231E3514001516BE /* Model */,
+				12CF1AEC231E3342001516BE /* AppDelegate.swift */,
+				12CF1B20231E449E001516BE /* TableViewCell.swift */,
+				12CF1AF6231E3343001516BE /* Assets.xcassets */,
+				12CF1AFB231E3343001516BE /* Info.plist */,
+				12CF1AF3231E3342001516BE /* RedSo.xcdatamodeld */,
+			);
+			path = RedSo;
+			sourceTree = "<group>";
+		};
+		12CF1B03231E3343001516BE /* RedSoTests */ = {
+			isa = PBXGroup;
+			children = (
+				12CF1B04231E3343001516BE /* RedSoTests.swift */,
+				12CF1B06231E3343001516BE /* Info.plist */,
+			);
+			path = RedSoTests;
+			sourceTree = "<group>";
+		};
+		12CF1B0E231E3343001516BE /* RedSoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12CF1B0F231E3343001516BE /* RedSoUITests.swift */,
+				12CF1B11231E3343001516BE /* Info.plist */,
+			);
+			path = RedSoUITests;
+			sourceTree = "<group>";
+		};
+		12CF1B1D231E3514001516BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12CF1B28231E4D72001516BE /* Result.swift */,
+				12CF1B2A231E4DBA001516BE /* CurrentResults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12CF1B1E231E3533001516BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12CF1AEE231E3342001516BE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		12CF1B1F231E353B001516BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12CF1B33231E8CA6001516BE /* RedSoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		12CF1B2C231E56AA001516BE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				12CF1B2F231E577B001516BE /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		12CF1B36231E9FA5001516BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12CF1AF8231E3343001516BE /* LaunchScreen.storyboard */,
+				12CF1AF0231E3342001516BE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12CF1AE8231E3342001516BE /* RedSo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12CF1B14231E3343001516BE /* Build configuration list for PBXNativeTarget "RedSo" */;
+			buildPhases = (
+				12CF1AE5231E3342001516BE /* Sources */,
+				12CF1AE6231E3342001516BE /* Frameworks */,
+				12CF1AE7231E3342001516BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedSo;
+			productName = RedSo;
+			productReference = 12CF1AE9231E3342001516BE /* RedSo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12CF1AFF231E3343001516BE /* RedSoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12CF1B17231E3343001516BE /* Build configuration list for PBXNativeTarget "RedSoTests" */;
+			buildPhases = (
+				12CF1AFC231E3343001516BE /* Sources */,
+				12CF1AFD231E3343001516BE /* Frameworks */,
+				12CF1AFE231E3343001516BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12CF1B02231E3343001516BE /* PBXTargetDependency */,
+			);
+			name = RedSoTests;
+			productName = RedSoTests;
+			productReference = 12CF1B00231E3343001516BE /* RedSoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12CF1B0A231E3343001516BE /* RedSoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12CF1B1A231E3343001516BE /* Build configuration list for PBXNativeTarget "RedSoUITests" */;
+			buildPhases = (
+				12CF1B07231E3343001516BE /* Sources */,
+				12CF1B08231E3343001516BE /* Frameworks */,
+				12CF1B09231E3343001516BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12CF1B0D231E3343001516BE /* PBXTargetDependency */,
+			);
+			name = RedSoUITests;
+			productName = RedSoUITests;
+			productReference = 12CF1B0B231E3343001516BE /* RedSoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12CF1AE1231E3342001516BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = MaJ;
+				TargetAttributes = {
+					12CF1AE8231E3342001516BE = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					12CF1AFF231E3343001516BE = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 12CF1AE8231E3342001516BE;
+					};
+					12CF1B0A231E3343001516BE = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 12CF1AE8231E3342001516BE;
+					};
+				};
+			};
+			buildConfigurationList = 12CF1AE4231E3342001516BE /* Build configuration list for PBXProject "RedSo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12CF1AE0231E3342001516BE;
+			productRefGroup = 12CF1AEA231E3342001516BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12CF1AE8231E3342001516BE /* RedSo */,
+				12CF1AFF231E3343001516BE /* RedSoTests */,
+				12CF1B0A231E3343001516BE /* RedSoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12CF1AE7231E3342001516BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CF1AFA231E3343001516BE /* LaunchScreen.storyboard in Resources */,
+				12CF1AF7231E3343001516BE /* Assets.xcassets in Resources */,
+				12CF1AF2231E3342001516BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CF1AFE231E3343001516BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CF1B09231E3343001516BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12CF1AE5231E3342001516BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CF1AEF231E3342001516BE /* ViewController.swift in Sources */,
+				12CF1B21231E449E001516BE /* TableViewCell.swift in Sources */,
+				12CF1B2B231E4DBA001516BE /* CurrentResults.swift in Sources */,
+				12CF1B34231E8CA6001516BE /* RedSoViewModel.swift in Sources */,
+				12CF1B30231E577B001516BE /* APIManager.swift in Sources */,
+				12CF1AED231E3342001516BE /* AppDelegate.swift in Sources */,
+				12CF1B29231E4D72001516BE /* Result.swift in Sources */,
+				12CF1AF5231E3342001516BE /* RedSo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CF1AFC231E3343001516BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CF1B05231E3343001516BE /* RedSoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CF1B07231E3343001516BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CF1B10231E3343001516BE /* RedSoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12CF1B02231E3343001516BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12CF1AE8231E3342001516BE /* RedSo */;
+			targetProxy = 12CF1B01231E3343001516BE /* PBXContainerItemProxy */;
+		};
+		12CF1B0D231E3343001516BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12CF1AE8231E3342001516BE /* RedSo */;
+			targetProxy = 12CF1B0C231E3343001516BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12CF1AF0231E3342001516BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12CF1AF1231E3342001516BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12CF1AF8231E3343001516BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12CF1AF9231E3343001516BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12CF1B12231E3343001516BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12CF1B13231E3343001516BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12CF1B15231E3343001516BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMR52MRCJ6;
+				INFOPLIST_FILE = RedSo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jamesMa.RedSo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12CF1B16231E3343001516BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMR52MRCJ6;
+				INFOPLIST_FILE = RedSo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jamesMa.RedSo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12CF1B18231E3343001516BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMR52MRCJ6;
+				INFOPLIST_FILE = RedSoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jamesMa.RedSoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedSo.app/RedSo";
+			};
+			name = Debug;
+		};
+		12CF1B19231E3343001516BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMR52MRCJ6;
+				INFOPLIST_FILE = RedSoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jamesMa.RedSoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedSo.app/RedSo";
+			};
+			name = Release;
+		};
+		12CF1B1B231E3343001516BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMR52MRCJ6;
+				INFOPLIST_FILE = RedSoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jamesMa.RedSoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RedSo;
+			};
+			name = Debug;
+		};
+		12CF1B1C231E3343001516BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMR52MRCJ6;
+				INFOPLIST_FILE = RedSoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jamesMa.RedSoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RedSo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12CF1AE4231E3342001516BE /* Build configuration list for PBXProject "RedSo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CF1B12231E3343001516BE /* Debug */,
+				12CF1B13231E3343001516BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12CF1B14231E3343001516BE /* Build configuration list for PBXNativeTarget "RedSo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CF1B15231E3343001516BE /* Debug */,
+				12CF1B16231E3343001516BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12CF1B17231E3343001516BE /* Build configuration list for PBXNativeTarget "RedSoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CF1B18231E3343001516BE /* Debug */,
+				12CF1B19231E3343001516BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12CF1B1A231E3343001516BE /* Build configuration list for PBXNativeTarget "RedSoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CF1B1B231E3343001516BE /* Debug */,
+				12CF1B1C231E3343001516BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		12CF1AF3231E3342001516BE /* RedSo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				12CF1AF4231E3342001516BE /* RedSo.xcdatamodel */,
+			);
+			currentVersion = 12CF1AF4231E3342001516BE /* RedSo.xcdatamodel */;
+			path = RedSo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 12CF1AE1231E3342001516BE /* Project object */;
+}
