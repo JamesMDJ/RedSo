@@ -9,15 +9,8 @@
 import Foundation
 struct RedSoViewModel {
     let currentResults: CurrentResults
-
     init(currentResults: CurrentResults) {
         self.currentResults = currentResults
-        updateProperties()
     }
-    private mutating func updateProperties() {
-       
-    }
-}
-extension RedSoViewModel {
-    
+
 }

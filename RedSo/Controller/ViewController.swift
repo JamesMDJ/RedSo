@@ -27,8 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.refreshControl = UIRefreshControl()
-        tableView.refreshControl?.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        initLayout()
         initData()
     }
     
@@ -40,6 +39,12 @@ class ViewController: UIViewController {
         updateData(index:typeSegmentedControl.selectedSegmentIndex)
         tableView.refreshControl?.endRefreshing()
         
+    }
+    
+    func initLayout(){
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        typeSegmentedControl.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 18) ], for: .normal)
     }
     
     func initData(){
